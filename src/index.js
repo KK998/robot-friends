@@ -4,5 +4,5 @@ import App from './App';
 import 'tachyons';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App name="Klemen"/>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.unregister();
