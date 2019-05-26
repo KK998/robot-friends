@@ -6,7 +6,7 @@ class Search extends React.Component {
             <div className="pb2 f3 white b">
                 <div>
                     <input
-                        className="w-50 bw2"
+                        className="w-50 bw2 b--light-purple helvetica tc f4"
                         type="text"
                         onChange={this.props.handleChange}
                         value={this.props.state.value}
