@@ -1,8 +1,6 @@
 import React from 'react';
 
 class Search extends React.Component {
-    
-
     render() {
         return (
             <div className="pb2 f3 white b">

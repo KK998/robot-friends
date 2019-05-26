@@ -13,14 +13,13 @@ class App extends React.Component {
 
   handleChange = (event) => {
     this.setState({ value: event.target.value })
-    console.log(this.state.value)
   }
 
   render() {
     return (
       <div className="ma0 pa0 ">
         <Header state={this.state} handleChange={this.handleChange} />
-        <CardList />
+        <CardList value={this.state.value}/>
       </div>
     )
   }
