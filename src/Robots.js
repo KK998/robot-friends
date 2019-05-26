@@ -4,7 +4,7 @@ let robots = [
         "url": "https://robohash.org/1?set=set3",
         "name": "Frances McDonald",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien."
-    },
+    }/* ,
     {
         "id": 2,
         "url": "https://robohash.org/12?set=set3",
@@ -76,7 +76,7 @@ let robots = [
         "url": "https://robohash.org/24?set=set3",
         "name": "Ryan Foster",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien."
-    }
+    } */
 ]
 
 export default robots;
