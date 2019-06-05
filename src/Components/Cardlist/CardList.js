@@ -1,7 +1,6 @@
 import React from 'react';
-import Card from './Card.js';
+import Card from '../Card/Card.js';
 class CardList extends React.Component {
-
     constructor() {
         super()
         this.state = {
@@ -16,7 +15,6 @@ class CardList extends React.Component {
             .then(response => response.json())
             .then(data => this.setState({ data, isLoading: false }))
     }
-
 
     render() {
         if (this.state.isLoading) {
@@ -34,7 +32,6 @@ class CardList extends React.Component {
                     }
                     return null
                 })}
-
             </div>
         )
     }

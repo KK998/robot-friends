@@ -1,9 +1,10 @@
 import React from 'react';
-import Header from './Header.js';
-import CardList from './CardList.js';
+import Header from '../Components/Header/Header.js';
+import CardList from '../Components/Cardlist/CardList.js';
+import Scroll from '../Components/Scroll/Scroll.js';
+import ErrorBoundry from '../Components/ErrorBoundry.js';
 
 class App extends React.Component {
-
   constructor() {
     super()
     this.state = {
@@ -19,7 +20,11 @@ class App extends React.Component {
     return (
       <div className="ma0 pa0 ">
         <Header state={this.state} handleChange={this.handleChange} />
-        <CardList value={this.state.value}/>
+        <Scroll>
+          <ErrorBoundry>
+            <CardList value={this.state.value} />
+          </ErrorBoundry>
+        </Scroll>
       </div>
     )
   }
